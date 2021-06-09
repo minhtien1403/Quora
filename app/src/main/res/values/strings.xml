@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quora</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="topics">
+        <item>finance</item>
+        <item>sports</item>
+        <item>food</item>
+        <item>technology</item>
+        <item>cars</item>
+    </string-array>
+</resources>

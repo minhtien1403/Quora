@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_toolbar"
+            android:background="#881d16"
+            android:elevation="4dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cmt_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_toolbar"
+            android:layout_above="@+id/bottom"/>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/proflie"
+                android:id="@+id/cmt_profile_image"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:hint="Write your comment here"
+                android:id="@+id/commentTxt"
+                android:padding="10dp"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/postComment"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_post"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
